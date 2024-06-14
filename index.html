@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./assets/CSS/style.css">
-    <title>Weather Forecast App</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        <form id="city-form">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="weather-info">
+            <h2 id="city-name"></h2>
+            <p id="current-date"></p>
+            <p id="weather-icon"></p>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+        </div>
+        <div id="forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-cards"></div>
+        </div>
+        <div id="search-history">
+            <h2>Search History</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
     <script src="./assets/JS/script.js"></script>
 </body>
 </html>
