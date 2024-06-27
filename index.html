@@ -3,34 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Weather Dashboard</h1>
-        <form id="city-form">
-            <input type="text" id="city-input" placeholder="Enter city name">
-            <button id="weather" type="submit">Get Weather</button>
-        </form>
-        <div id="weather-info">
-            <h2 id="city-name"></h2>
-            <p id="current-date"></p>
-            <p id="weather-icon"></p>
-            <p id="temperature"></p>
-            <p id="humidity"></p>
-            <p id="wind-speed"></p>
-        </div>
-        <div id="forecast">
-            <h2>5-Day Forecast</h2>
-            <div id="forecast-cards"></div>
-        </div>
-        <div id="search-history">
-            <h2>Search History</h2>
-            <ul id="history-list"></ul>
-        </div>
+        <header class="header">
+            <h1>Weather Forecast</h1>
+        </header>
+        <section class="search-section">
+            <h2>Search City</h2>
+            <form id="search-form">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-history"></div>
+        </section>
+        <section id="current-weather" class="weather-section"></section>
+        <section id="forecast" class="weather-section"></section>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"></script>
 </body>
 </html>
